@@ -1,11 +1,12 @@
 package pl.devsmentoring;
 
+import java.util.Arrays;
+
 public class ArrayMyTrial {
     public static void main(String[] args) {
 
         String[] test;
         String[] arrayInstrumentMusic = new String[10];
-
 
 
         String instrument1 = "guitar";
@@ -19,16 +20,14 @@ public class ArrayMyTrial {
         String instrument9 = "trumpet";
         String instrument10 = "saxophone";
 
-        String[] instrument = new String[10];
+        String[] instrument = {instrument1, instrument2, instrument3, "trombone", instrument5, instrument6, instrument7, instrument8, instrument9, instrument10};
+        System.out.println(Arrays.toString(instrument));
 
-        System.out.println(instrument.length);
-
-        System.out.println(instrument2);
-
-        instrument[4] = "cello";
+        instrument[3] = "selow";
         instrument[8] = "tambourine";
+        System.out.println(Arrays.toString(instrument));
 
-        System.out.println(instrument3);
-        System.out.println(instrument4);
+
+
     }
 }
